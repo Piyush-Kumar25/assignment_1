@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header {
+            background: #f8f9fa;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.25rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about {
+            margin: 5% 0;
+        }
+
+        .about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Make the image circular */
+            object-fit: cover; /* Ensure the image covers the circle */
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .projects .card {
+            transition: transform 0.2s;
+        }
+
+        .projects .card:hover {
+            transform: scale(1.05);
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            background: #f8f9fa;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Hi, I'm Piyush Kumar</h1>
+            <p>A Passionate Full Stack Developer</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 class="section-title">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="/image1.jpg" alt="Profile Picture">
+            </div>
+            <div class="col-md-8">
+                <p>Hello! I'm Piyush Kumar, a full stack developer with a passion for creating dynamic and responsive web applications. With experience in both front-end and back-end development, I enjoy working on projects that challenge me to learn new skills and improve my existing ones. In my free time, I love exploring new technologies, contributing to open-source projects, and engaging with the developer community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2 class="section-title">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/ecommerce.jpeg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ecommerce Project</h5>
+                        <p class="card-text">Developed an E-Commerce web app with ReactJS at client-side & NodeJS at server-side.
+                          • Implemented CRUD & advance products Searching/Filtering system.
+                          • Implemented auth & Integrated Braintree as Payment Gateway for payment processes.
+                          • Built Cart system where users can add, delete and update products in the cart and place an order.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/vis.jpeg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pathfinding Visualizer</h5>
+                        <p class="card-text">Built ReactJS application for visualizing pathfinding algorithms
+                          • Implemented Dijkstra algorithm to find and visualize the shortest path between any two points.
+                          </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/chat.jpeg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Chat App</h5>
+                        <p class="card-text">Chatting app allows you to communicate with your customers in web chat rooms. 
+                          It enables you to send and receive messages. 
+                          Chatting apps make it easier, simpler, and faster to connect with everyone and it is also easy to use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container my-5">
+        <h2 class="section-title">Skills</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Front-end</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Back-end</h4>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Tools</h4>
+                <ul>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>Webpack</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="section-title">Contact</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Piyush. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
